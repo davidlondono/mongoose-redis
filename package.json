@@ -5,7 +5,8 @@
   },
   "dependencies": {
     "redis": "^2.6.2",
-    "lodash": "^4.15.0"
+    "lodash": "^4.15.0",
+    "snyk": "^1.192.4"
   },
   "description": "Integrated Redis caching for Mongoose queries.",
   "keywords": [
@@ -38,6 +39,10 @@
   "name": "mongoose-redis",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
-  "scripts": {},
-  "version": "1.2.0"
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "version": "1.2.0",
+  "snyk": true
 }
